@@ -1,0 +1,50 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+//Style
+
+form {
+    width: fit-content;
+    height: fit-content;
+    margin: 150px auto;
+    padding: 80px 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(41, 84, 92, 0.65);
+    background-color: rgb(236, 253, 255);
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 150px;
+        border-bottom: 1px solid rgba(41, 84, 92, 1);
+        font-family: Roboto;
+        color: rgba(41, 84, 92, 1);
+    }
+}
+
+.form-login {
+    margin-bottom: 20px;
+    display: flex;
+
+    input {
+        padding: 5px;
+        height: 25px;
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.288);
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    button {
+        padding: 12px 68px;
+        margin-top: 50px;
+        width: 100%;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background-color: rgba(54, 52, 52, 0.9);
+        color: white;
+        cursor: pointer;
+    
+    }
+}
