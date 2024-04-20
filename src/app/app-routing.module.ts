@@ -6,7 +6,7 @@ import { StopComponent } from './stop/stop.component';
 import { OverviewComponent } from './overview/overview.component';
 
 const routes: Routes = [
-  {path: "login", component: LoginComponent},
+  {path: "", component: LoginComponent},
   {path: "start", component: StartComponent},
   {path: "stop", component: StopComponent},
   {path: "overview", component: OverviewComponent}

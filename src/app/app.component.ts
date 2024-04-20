@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HomeOffice-CheckIn';
 
-  loggedIn: boolean = false
+  /*loggedIn: boolean = false
   started: boolean = true
   stopped: boolean = false
-  overview: boolean = false
+  overview: boolean = false*/
 }

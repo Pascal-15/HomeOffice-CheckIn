@@ -9,12 +9,12 @@ import { Router } from '@angular/router'
 })
 export class LoginComponent {
 
-  isLoggedIn: boolean = false
+  isLoggedIn: boolean = false;
 
   constructor(private router: Router) {}
 
   login() {
-    this.isLoggedIn = true
-    this.router.navigate(["/start"])
+    this.isLoggedIn = true;
+    this.router.navigate(["/start"]);
   }
 }

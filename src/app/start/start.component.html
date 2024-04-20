@@ -1,7 +1,6 @@
 <div class="timer-container">
     <h1>HomeOffice CheckIn - Timer</h1>
 
-    
     <div class="watch-container">
         <span>{{hr}} :&nbsp;</span>
         <span>{{min}} :&nbsp;</span>
@@ -9,9 +8,15 @@
     </div>
 
     <div class="button-container">
-        <button class="button-start"><i class="material-icons">play_circle</i></button>
-        <button class="button-stop"><i class="material-icons">stop_circle</i></button>
+
+        <button class="button-start" (click)="startTimer()">
+            <i class="material-icons">play_circle</i>
+        </button>
+        <button class="button-stop" (click)="stopTimer()">
+            <i class="material-icons">stop_circle</i>
+        </button>
         <button routerLink="/overview" class="button-overview">ÜBERSICHT</button>
+
     </div>
 
 </div>
