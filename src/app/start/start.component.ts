@@ -63,12 +63,11 @@ export class StartComponent {
       this.animationFrame = undefined;
       this.lastFrameTime = 0;
 
-      const currentTime = `${(this.hr)}:${(this.min)}:${(this.sec)}`;
-      alert(`Aktuelle Zeit des Timers:" ${currentTime}`);
+      alert(`Arbeitszeit:\nStunden: ${this.hr}\nMinuten: ${this.min}\nSekunden: ${this.sec}`);
       
       this.resetTimer()
 
-      //Save data TODO
+      //TODO Send data to database
 
     }
   }

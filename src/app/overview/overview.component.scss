@@ -1,0 +1,97 @@
+//Style
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overview-container {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+
+    .container-top {
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 60px;
+        margin-top: 0;
+
+        .button-timer {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: inline-flex;
+            justify-content: center;
+            margin: auto;
+            width: fit-content;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 4px 15px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+            border-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+            background-color: white;
+            background: linear-gradient(214deg, rgba(252,111,70,1) 0%, rgba(251,131,61,1) 50%, rgba(252,153,50,1) 100%);
+            cursor: pointer;
+        }
+    
+        h1 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            border-radius: 15px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+            padding: 7px 20px;
+            color: white;
+            background: linear-gradient(214deg, rgba(252,111,70,1) 0%, rgba(251,131,61,1) 50%, rgba(252,153,50,1) 100%);
+        }
+    }
+
+    .calendar-container {
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        padding: 20px 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(214deg, rgba(252,111,70,1) 0%, rgba(251,131,61,1) 50%, rgba(252,153,50,1) 100%);
+    
+        .calendar {
+            width: 300px;
+        }
+    }
+
+    .data-container {
+        grid-row: 3 / 4;
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        height: fit-content;
+        padding: 20px 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(214deg, rgba(252,111,70,1) 0%, rgba(251,131,61,1) 50%, rgba(252,153,50,1) 100%);
+        color: white;
+    }
+}
+
+    .material-icons {
+        position: relative;
+        font-size: 40px;
+        color: white;
+    }
+
+    button:hover{
+        transform: scale(1.04);
+    }
+    button:active {
+        transform: scale(0.95);
+    }

@@ -1,1 +1,17 @@
-<p>overview works!</p>
+<div class="overview-container">
+
+    <div class="container-top">
+        <h1>HomeOffice CheckIn - Übersicht</h1>
+        <button class="button-timer" routerLink="/start">
+            <i class="material-icons">arrow_back</i>
+        </button>
+    </div>
+
+    <div class="calendar-container">
+        <mat-calendar class="calendar" [(selected)] = "selectedDate"></mat-calendar>
+    </div>
+
+    <div class="data-container">
+        <p>Date  : {{selectedDate}}</p>
+    </div>
+</div>

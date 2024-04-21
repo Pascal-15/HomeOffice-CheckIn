@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class OverviewComponent {
 
+  selectedDate: any
+
+
+
+  //Database GET times for date
+  getTimes() {
+
+  }
 }

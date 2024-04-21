@@ -7,6 +7,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 //Librarys
 import { MatIconModule } from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 /*
 import { LoginComponent } from './login/login.component';
 import { StartComponent } from './start/start.component';
@@ -25,7 +27,9 @@ import { OverviewComponent } from './overview/overview.component';*/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [
     provideClientHydration(),
