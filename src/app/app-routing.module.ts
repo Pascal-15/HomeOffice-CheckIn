@@ -1,14 +1,12 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StartComponent } from './start/start.component';
+import { TimerComponent } from './timer/timer.component';
 import { LoginComponent } from './login/login.component';
-import { StopComponent } from './stop/stop.component';
 import { OverviewComponent } from './overview/overview.component';
 
 const routes: Routes = [
   {path: "", component: LoginComponent},
-  {path: "start", component: StartComponent},
-  {path: "stop", component: StopComponent},
+  {path: "timer", component: TimerComponent},
   {path: "overview", component: OverviewComponent}
 ];
 
@@ -17,4 +15,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LoginComponent, StartComponent, StopComponent, OverviewComponent]
+export const routingComponents = [LoginComponent, TimerComponent, OverviewComponent]

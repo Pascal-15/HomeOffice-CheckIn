@@ -9,19 +9,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-/*
-import { LoginComponent } from './login/login.component';
-import { StartComponent } from './start/start.component';
-import { StopComponent } from './stop/stop.component';
-import { OverviewComponent } from './overview/overview.component';*/
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    /*LoginComponent,
-    StartComponent,
-    StopComponent,
-    OverviewComponent*/
     routingComponents
   ],
   imports: [
@@ -29,7 +22,9 @@ import { OverviewComponent } from './overview/overview.component';*/
     AppRoutingModule,
     MatIconModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),

@@ -4,11 +4,11 @@ import { AppComponent } from '../app.component';
 import { clearInterval } from 'timers';
 
 @Component({
-  selector: 'app-start',
-  templateUrl: './start.component.html',
-  styleUrl: './start.component.scss'
+  selector: 'app-timer',
+  templateUrl: './timer.component.html',
+  styleUrl: './timer.component.scss'
 })
-export class StartComponent {
+export class TimerComponent {
   title = "HommeOffice - Timer";
 
   //currentTime: number = 0

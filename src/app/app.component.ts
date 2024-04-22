@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HomeOffice-CheckIn';
 
-  /*loggedIn: boolean = false
-  started: boolean = true
-  stopped: boolean = false
-  overview: boolean = false*/
+  /*@Output() userData: EventEmitter<any> = new EventEmitter<any>();
+
+  user: User[] = [
+    {username: "Test", password: "test", workingTime: ""}
+  ]*/
+
+
+
 }

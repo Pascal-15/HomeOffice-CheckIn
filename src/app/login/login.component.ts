@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router'
+import { User } from '../user';
 
 @Component({
   selector: 'app-login',
@@ -10,11 +11,37 @@ import { Router } from '@angular/router'
 export class LoginComponent {
 
   isLoggedIn: boolean = false;
+  inputUsername: String = "";
+  inputPassword: String = "";
 
-  constructor(private router: Router) {}
+  //Approved users
+  user: User[] = [
+    {username: "test", password: "test", workingTime: ""},
+    {username: "test2", password: "test2", workingTime: ""}
+  ]
+
+  constructor(private router: Router, private fb: FormBuilder) {}
+
+
+  //Get data from input fields
+  getUsername(usrName: string) {
+    this.inputUsername = usrName;
+  }
+  getPassword(usrPW: string) {
+    this.inputPassword = usrPW;
+  }
+
 
   login() {
-    this.isLoggedIn = true;
-    this.router.navigate(["/start"]);
+    //Proof login data
+    for (let i = 0; i < this.user.length; i++) {
+      if (this.inputUsername === this.user[i].username && this.inputPassword === this.user[i].password) {
+        this.isLoggedIn = true;
+        this.router.navigate(["/timer"]);
+      }
+    }
+    if (this.isLoggedIn != true) {
+      alert("Falsche Login Informationen");
+    }
   }
 }
